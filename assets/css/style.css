@@ -182,6 +182,7 @@ section#hero-section a.btn.hero:hover {
 
 section#difference {
   padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 section#difference h2 {
   color: var(--color-title-hero-section);
@@ -195,7 +196,7 @@ section#difference .row-cards {
 }
 section#difference .row-cards .card {
   padding: 28px 10px;
-  background: linear-gradient(150deg, rgba(0, 119, 255, 0.1882352941) 0%, rgba(0, 119, 255, 0) 50%);
+  background: linear-gradient(120deg, rgba(0, 119, 255, 0.1882352941) 34%, rgba(0, 119, 255, 0) 68%);
   border: none;
   min-height: 394px;
 }
@@ -234,6 +235,46 @@ section#difference .row-cards .card .card-body div.card-text li::before {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+section#difference a.btn.hero {
+  background: var(--bg-btn);
+  box-shadow: var(--box-shadow-btn);
+  color: var(--color-btn);
+  font-family: Good Timing;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: center;
+  border-radius: 7.24px;
+  transition: all 0.5s ease;
+}
+section#difference a.btn.hero:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 768px) {
+  section#difference a.btn.hero {
+    padding: 1rem 56px;
+  }
+}
+
+section#mockup-section {
+  padding-bottom: 6.25rem;
+}
+section#mockup-section h2 {
+  color: var(--color-title-hero-section);
+}
+section#mockup-section h2 span {
+  color: var(--color-title-detailer-hero-section);
+}
+section#mockup-section img {
+  width: 100%;
+}
+
+section#faq-section h2 {
+  color: var(--color-title-hero-section);
+}
+section#faq-section h2 span {
+  color: var(--color-title-detailer-hero-section);
 }
 
 * {

@@ -1,4 +1,4 @@
-@import "root", "fonts", "navbar", "hero", "difference";
+@import "root", "fonts", "navbar", "hero", "difference", "mockup-section", "faq-section";
 
 * {
     box-sizing: border-box;
@@ -19,6 +19,6 @@ body {
     background: var(--bg-body);
 }
 
-h2{
+h2 {
     font-size: 42px;
 }
