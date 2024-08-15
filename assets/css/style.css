@@ -1,0 +1,262 @@
+:root {
+  --bg-body: #0c0e22;
+  --color-hamburger-bar: #d3c2c2;
+  --bg-navbar-active: #333;
+  --color-accordion-header-open: rgba(255, 255, 255, 0.5);
+  --color-btn-login-bg: none;
+  --color-btn-login-border: rgba(255, 255, 255, 0.5);
+  --color-btn-login-text: rgba(255, 255, 255, 1);
+  --color-btn-register-bg: #0075FF;
+  --color-btn-register-text: #FFFFFF;
+  --color-btn-register-box-shadow: rgba(186, 76, 14, 0.04);
+  --color-title-hero-section: #FFFFFF;
+  --color-title-detailer-hero-section: #FF6634;
+  --color-text-hero-section: #C1C0FA;
+  --bg-btn: #0075FF;
+  --box-shadow-btn: 0px 20.3px 41.55px 0px #0077ff52;
+  --color-btn: #FFFFFF;
+}
+
+header#header {
+  height: 87px;
+}
+header#header nav.navbar {
+  height: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+header#header nav.navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+header#header nav.navbar .navbar-container button.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  header#header nav.navbar .navbar-container button.hamburger {
+    display: flex;
+  }
+}
+header#header nav.navbar .navbar-container button.hamburger span.bar {
+  height: 3px;
+  width: 25px;
+  background: var(--color-hamburger-bar);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+header#header nav.navbar .navbar-container .nav-menu {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0;
+}
+header#header nav.navbar .navbar-container .nav-menu a.btn {
+  padding: 0.625rem 3rem !important;
+  font-family: goodtiming;
+  height: 45px;
+  align-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  border-style: solid;
+  border-width: 2.17px;
+  border-radius: 8.69px;
+}
+header#header nav.navbar .navbar-container .nav-menu .btn-login {
+  background: var(--color-btn-login-bg);
+  border-color: var(--color-btn-login-border);
+  color: var(--color-btn-login-text);
+}
+header#header nav.navbar .navbar-container .nav-menu .btn-register {
+  background: var(--color-btn-register-bg);
+  box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
+  color: var(--color-btn-register-text);
+  padding: 1.125rem 3rem;
+  opacity: 1;
+}
+header#header nav.navbar.active {
+  background: var(--bg-navbar-active);
+}
+@media screen and (min-width: 768px) {
+  header#header {
+    align-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: var(--bg-navbar-active);
+    z-index: 5;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    backdrop-filter: blur(10px);
+    border-bottom: solid 2px var(--color-accordion-header-open);
+  }
+  .nav-menu.active {
+    opacity: 1;
+    max-height: 18.75rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-top: 1.5rem !important;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+}
+section#hero-section {
+  min-height: 100vh;
+  background: url("../../src/img/bg_hero_webp_3x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+section#hero-section .container {
+  padding-top: 4rem;
+}
+section#hero-section .row {
+  width: 100%;
+}
+section#hero-section h2 {
+  font-family: Good Timing;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48.86px;
+  text-align: left;
+  color: var(--color-title-hero-section);
+}
+section#hero-section h2 span {
+  color: var(--color-title-detailer-hero-section);
+}
+section#hero-section p {
+  font-family: D-DIN Exp;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.08px;
+  text-align: left;
+  color: var(--color-text-hero-section);
+}
+@media screen and (min-width: 768px) {
+  section#hero-section p {
+    width: 22rem;
+  }
+}
+section#hero-section a.btn.hero {
+  background: var(--bg-btn);
+  box-shadow: var(--box-shadow-btn);
+  color: var(--color-btn);
+  font-family: Good Timing;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: center;
+  border-radius: 7.24px;
+  padding: 1rem 10px;
+  transition: all 0.5s ease;
+}
+section#hero-section a.btn.hero:hover {
+  transform: scale(1.1);
+}
+
+section#difference {
+  padding-top: 6.25rem;
+}
+section#difference h2 {
+  color: var(--color-title-hero-section);
+}
+section#difference h2 span {
+  color: var(--color-title-detailer-hero-section);
+}
+section#difference .row-cards {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+section#difference .row-cards .card {
+  padding: 28px 10px;
+  background: linear-gradient(150deg, rgba(0, 119, 255, 0.1882352941) 0%, rgba(0, 119, 255, 0) 50%);
+  border: none;
+  min-height: 394px;
+}
+@media screen and (max-width: 768px) {
+  section#difference .row-cards .card {
+    margin-top: 1rem;
+  }
+}
+section#difference .row-cards .card .card-body h5 {
+  font-size: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+section#difference .row-cards .card .card-body p {
+  font-size: 0.9rem;
+  color: #C1C0FA;
+}
+section#difference .row-cards .card .card-body div.card-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+section#difference .row-cards .card .card-body div.card-text li {
+  position: relative;
+  padding-left: 25px;
+  color: #C1C0FA;
+}
+section#difference .row-cards .card .card-body div.card-text li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: url("../../src/img/Vector.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-body);
+}
+
+h2 {
+  font-size: 42px;
+}
+
+/*# sourceMappingURL=style.css.map */

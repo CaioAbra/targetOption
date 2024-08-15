@@ -1,0 +1,63 @@
+section#hero-section {
+    min-height: 100vh;
+    background: url("../../src/img/bg_hero_webp_3x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+
+    .container {
+        padding-top: 4rem;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    h2 {
+        font-family: Good Timing;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 48.86px;
+        text-align: left;
+        color: var(--color-title-hero-section);
+
+        span {
+            color: var(--color-title-detailer-hero-section);
+        }
+
+        @media screen and (min-width:768px) {
+            // width: 510px;
+        }
+    }
+
+    p {
+        font-family: D-DIN Exp;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29.08px;
+        text-align: left;
+        color: var(--color-text-hero-section);
+
+        @media screen and (min-width:768px) {
+            width: 22rem;
+        }
+    }
+
+    a.btn.hero {
+        background: var(--bg-btn);
+        box-shadow: var(--box-shadow-btn);
+        color: var(--color-btn);
+        font-family: Good Timing;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 23.4px;
+        text-align: center;
+        border-radius: 7.24px;
+        padding: 1rem 10px;
+        transition: all .5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
