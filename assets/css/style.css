@@ -205,7 +205,7 @@ section#hero-section {
   section#hero-section {
     background-size: 100vh;
     background-position-x: 90%;
-    background-position-y: 15vh;
+    background-position-y: 100%;
   }
   section#hero-section h2.hero {
     margin-top: 0 !important;
