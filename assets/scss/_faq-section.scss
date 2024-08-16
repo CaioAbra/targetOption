@@ -68,8 +68,7 @@ section#faq-section {
 
 
     footer {
-        background-image: var(--color-bg-footer);
-        background-repeat: no-repeat;
+
         padding-top: 3rem;
 
         p.direitos {
@@ -153,5 +152,15 @@ section#faq-section {
         }
     }
 
+    .title-list {
+        color: #FFFFFF;
+    }
+
+
+    background-image: var(--color-bg-footer);
+    background-repeat: no-repeat;
+    background-size: 33rem;
+    background-position-y: bottom;
+    background-position-x: -5rem;
 
 }

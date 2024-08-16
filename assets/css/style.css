@@ -19,7 +19,7 @@
   --color-accordion-header: #FFFFFF;
   --color-accordion-header-open: #FFFFFF;
   --color-accordion-body: #C1C0FA;
-  --color-bg-footer: url("./src/img/bg-footer.webp");
+  --color-bg-footer: url("../../src/img/bg-footer.webp");
   --color-footer-text: #C1C0FA;
   --color-bg-navbar-active: #0075FF;
 }
@@ -36,6 +36,18 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "DXRigraf-SemiBoldExpanded";
+  src: url("../fonts/DXRigraf-SemiBoldExpanded.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DXRigraf-SemiBoldItalic";
+  src: url("../fonts/DXRigraf-SemiBoldItalic.otf");
+  font-weight: 300;
+  font-style: normal;
+}
 h2 {
   font-family: DXRigraf-SemiBold !important;
 }
@@ -43,7 +55,8 @@ h2 {
 p,
 button,
 li,
-ul {
+ul,
+a {
   font-family: DXRigraf-SemBdExpIta !important;
 }
 
@@ -300,6 +313,13 @@ section#mockup-section img {
   width: 100%;
 }
 
+section#faq-section {
+  background-image: var(--color-bg-footer);
+  background-repeat: no-repeat;
+  background-size: 33rem;
+  background-position-y: bottom;
+  background-position-x: -5rem;
+}
 section#faq-section .container-faq {
   padding-bottom: 7.5rem;
 }
@@ -357,8 +377,6 @@ section#faq-section .accordion .accordion-body.open {
   display: block;
 }
 section#faq-section footer {
-  background-image: var(--color-bg-footer);
-  background-repeat: no-repeat;
   padding-top: 3rem;
 }
 section#faq-section footer p.direitos {
@@ -425,6 +443,9 @@ section#faq-section footer .endPage {
   font-size: 0.8rem;
   line-height: 24px;
   color: var(--color-footer-text);
+}
+section#faq-section .title-list {
+  color: #FFFFFF;
 }
 
 * {
