@@ -222,6 +222,11 @@ section#hero-section a.btn.hero {
   padding: 1rem 10px;
   transition: all 0.5s ease;
 }
+@media screen and (min-width: 768px) {
+  section#hero-section a.btn.hero {
+    padding: 1rem 64px;
+  }
+}
 section#hero-section a.btn.hero:hover {
   transform: scale(1.1);
 }
