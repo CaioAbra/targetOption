@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'DXRigraf-SemiBold';
+    src: url('../fonts/DXRigraf-SemiBold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DXRigraf-SemBdExpIta';
+    src: url('../fonts/DXRigraf-SemBdExpIta.otf');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+h2 {
+    font-family: DXRigraf-SemiBold !important;
+}
+
+p,
+button,
+li,
+ul {
+    font-family: DXRigraf-SemBdExpIta !important;
+}
