@@ -6,6 +6,22 @@ section#hero-section {
     background-size: cover;
     background-position-y: center;
 
+    @media screen and (max-width:768px) {
+        background-size: 100vh;
+        background-position-x: 90%;
+        background-position-y: 15vh;
+
+        h2.hero {
+            margin-top: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        a.btn.hero {
+            padding: 17px 40px !important;
+            margin-top: 50vh !important;
+        }
+    }
+
     .container {
         padding-top: 4rem;
     }
@@ -57,12 +73,12 @@ section#hero-section {
         padding: 1rem 10px;
         transition: all .5s ease;
 
-        @media screen and (min-width:768px){
-            padding: 1rem 64px; 
+        @media screen and (min-width:768px) {
+            padding: 1rem 64px;
         }
 
-        @media screen and (min-width:1024px){
-            padding: 1rem 40px; 
+        @media screen and (min-width:1024px) {
+            padding: 1rem 40px;
         }
 
         &:hover {

@@ -51,6 +51,30 @@ a {
   font-family: DXRigraf-SemiBoldExpanded !important;
 }
 
+@media screen and (max-width: 768px) {
+  h2,
+  h3,
+  h5,
+  h2.accordion-header {
+    font-size: 30px !important;
+    line-height: normal !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a.btn {
+    font-size: 10px !important;
+    line-height: normal !important;
+  }
+}
+
 header#header {
   height: 87px;
 }
@@ -176,6 +200,21 @@ section#hero-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
+}
+@media screen and (max-width: 768px) {
+  section#hero-section {
+    background-size: 100vh;
+    background-position-x: 90%;
+    background-position-y: 15vh;
+  }
+  section#hero-section h2.hero {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  section#hero-section a.btn.hero {
+    padding: 17px 40px !important;
+    margin-top: 50vh !important;
+  }
 }
 section#hero-section .container {
   padding-top: 4rem;

@@ -33,3 +33,29 @@ button,
 a {
     font-family: DXRigraf-SemiBoldExpanded !important;
 }
+
+
+h2,
+h3,
+h5,
+h2.accordion-header {
+    @media screen and (max-width:768px) {
+        font-size: 30px !important;
+        line-height: normal !important;
+    }
+}
+
+p {
+    @media screen and (max-width:768px) {
+        font-size: 14px !important;
+
+        line-height: normal !important;
+    }
+}
+
+a.btn {
+    @media screen and (max-width:768px) {
+        font-size: 10px !important;
+        line-height: normal !important;
+    }
+}
