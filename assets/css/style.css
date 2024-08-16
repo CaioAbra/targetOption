@@ -15,6 +15,10 @@
   --bg-btn: #0075FF;
   --box-shadow-btn: 0px 20.3px 41.55px 0px #0077ff52;
   --color-btn: #FFFFFF;
+  --color-bg-accordion: linear-gradient(90deg, rgb(0, 117, 255, 0.3) -19%, rgba(255, 119, 26, 0) 120.71%);
+  --color-accordion-header: #FFFFFF;
+  --color-accordion-header-open: #FFFFFF;
+  --color-accordion-body: #C1C0FA;
 }
 
 header#header {
@@ -275,6 +279,52 @@ section#faq-section h2 {
 }
 section#faq-section h2 span {
   color: var(--color-title-detailer-hero-section);
+}
+section#faq-section .accordion {
+  width: 100%;
+}
+section#faq-section .accordion .accordion-item {
+  padding: 0;
+  margin-bottom: 16px;
+  transition: 0.5s all ease;
+  border-radius: 16px;
+  background: var(--color-bg-accordion);
+}
+section#faq-section .accordion .accordion-header {
+  cursor: pointer;
+  padding: 1.25rem;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-accordion-header);
+}
+section#faq-section .accordion .accordion-header.open {
+  color: var(--color-accordion-header-open);
+}
+section#faq-section .accordion .accordion-header .icon {
+  transition: transform 0.3s;
+}
+section#faq-section .accordion .accordion-header .icon img {
+  transition: transform 0.3s;
+}
+section#faq-section .accordion .accordion-body {
+  padding: 0 1.25rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  display: none;
+  color: var(--color-accordion-body);
+  font-size: 0.9rem;
+}
+section#faq-section .accordion .accordion-body.open {
+  max-height: 28rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  display: block;
 }
 
 * {
