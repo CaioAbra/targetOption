@@ -6,7 +6,7 @@ section#hero-section {
     background-size: cover;
     background-position-y: center;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:500px) {
         background-size: 100vh;
         background-position-x: 90%;
         background-position-y: 100%;
@@ -19,6 +19,7 @@ section#hero-section {
         a.btn.hero {
             padding: 17px 40px !important;
             margin-top: 50vh !important;
+            margin-left: 2rem;
         }
     }
 
@@ -27,7 +28,7 @@ section#hero-section {
     }
 
     .row {
-        width: 100%;
+        // width: 100%;
     }
 
     h2 {

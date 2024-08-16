@@ -201,7 +201,7 @@ section#hero-section {
   background-size: cover;
   background-position-y: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   section#hero-section {
     background-size: 100vh;
     background-position-x: 90%;
@@ -214,13 +214,11 @@ section#hero-section {
   section#hero-section a.btn.hero {
     padding: 17px 40px !important;
     margin-top: 50vh !important;
+    margin-left: 2rem;
   }
 }
 section#hero-section .container {
   padding-top: 4rem;
-}
-section#hero-section .row {
-  width: 100%;
 }
 section#hero-section h2 {
   font-family: Good Timing;
