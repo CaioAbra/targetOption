@@ -227,6 +227,11 @@ section#hero-section a.btn.hero {
     padding: 1rem 64px;
   }
 }
+@media screen and (min-width: 1024px) {
+  section#hero-section a.btn.hero {
+    padding: 1rem 40px;
+  }
+}
 section#hero-section a.btn.hero:hover {
   transform: scale(1.1);
 }
