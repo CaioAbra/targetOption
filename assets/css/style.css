@@ -47,8 +47,6 @@ h5 {
 
 p,
 button,
-li,
-ul,
 a {
   font-family: DXRigraf-SemiBoldExpanded !important;
 }
@@ -377,6 +375,7 @@ section#faq-section .accordion .accordion-header .icon img {
   transition: transform 0.3s;
 }
 section#faq-section .accordion .accordion-body {
+  font-size: 0.9rem;
   padding: 0 1.25rem;
   max-height: 0;
   overflow: hidden;
