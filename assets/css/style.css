@@ -111,12 +111,22 @@ header#header nav.navbar .navbar-container .nav-menu .btn-login {
   border-color: var(--color-btn-login-border);
   color: var(--color-btn-login-text);
 }
+header#header nav.navbar .navbar-container .nav-menu .btn-login:hover {
+  background: var(--color-btn-register-bg);
+  box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
+  color: var(--color-btn-register-text);
+}
 header#header nav.navbar .navbar-container .nav-menu .btn-register {
   background: var(--color-btn-register-bg);
   box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
   color: var(--color-btn-register-text);
   padding: 1.125rem 3rem;
   opacity: 1;
+}
+header#header nav.navbar .navbar-container .nav-menu .btn-register:hover {
+  background: var(--color-btn-login-bg);
+  border-color: var(--color-btn-login-border);
+  color: var(--color-btn-login-text);
 }
 header#header nav.navbar.active {
   background: var(--bg-navbar-active);
