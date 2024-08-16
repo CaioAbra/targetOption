@@ -274,8 +274,12 @@ section#mockup-section img {
   width: 100%;
 }
 
+section#faq-section {
+  padding-bottom: 7.5rem;
+}
 section#faq-section h2 {
   color: var(--color-title-hero-section);
+  padding-bottom: 56px;
 }
 section#faq-section h2 span {
   color: var(--color-title-detailer-hero-section);
