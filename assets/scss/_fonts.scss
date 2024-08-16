@@ -1,29 +1,23 @@
 @font-face {
     font-family: 'DXRigraf-SemiBold';
     src: url('../fonts/DXRigraf-SemiBold.otf');
-    font-weight: 700;
-    font-style: normal;
+    // font-weight: 700;
+    // font-style: normal;
 }
 
-@font-face {
-    font-family: 'DXRigraf-SemBdExpIta';
-    src: url('../fonts/DXRigraf-SemBdExpIta.otf');
-    font-weight: 300;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'DXRigraf-SemiBoldExpanded';
     src: url('../fonts/DXRigraf-SemiBoldExpanded.otf');
-    font-weight: 300;
-    font-style: normal;
+    // font-weight: 300;
+    // font-style: normal;
 }
 
+
 @font-face {
-    font-family: 'DXRigraf-SemiBoldItalic';
-    src: url('../fonts/DXRigraf-SemiBoldItalic.otf');
-    font-weight: 300;
-    font-style: normal;
+    font-family: 'DxDynamix-BoldSlanted';
+    src: url('../fonts/DxDynamix-BoldSlanted.otf');
 }
 
 
@@ -36,5 +30,5 @@ button,
 li,
 ul,
 a {
-    font-family: DXRigraf-SemBdExpIta !important;
+    font-family: DXRigraf-SemiBoldExpanded !important;
 }

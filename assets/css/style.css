@@ -27,26 +27,14 @@
 @font-face {
   font-family: "DXRigraf-SemiBold";
   src: url("../fonts/DXRigraf-SemiBold.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DXRigraf-SemBdExpIta";
-  src: url("../fonts/DXRigraf-SemBdExpIta.otf");
-  font-weight: 300;
-  font-style: normal;
 }
 @font-face {
   font-family: "DXRigraf-SemiBoldExpanded";
   src: url("../fonts/DXRigraf-SemiBoldExpanded.otf");
-  font-weight: 300;
-  font-style: normal;
 }
 @font-face {
-  font-family: "DXRigraf-SemiBoldItalic";
-  src: url("../fonts/DXRigraf-SemiBoldItalic.otf");
-  font-weight: 300;
-  font-style: normal;
+  font-family: "DxDynamix-BoldSlanted";
+  src: url("../fonts/DxDynamix-BoldSlanted.otf");
 }
 h2 {
   font-family: DXRigraf-SemiBold !important;
@@ -57,7 +45,7 @@ button,
 li,
 ul,
 a {
-  font-family: DXRigraf-SemBdExpIta !important;
+  font-family: DXRigraf-SemiBoldExpanded !important;
 }
 
 header#header {
@@ -242,6 +230,7 @@ section#difference .row-cards .card {
   background: linear-gradient(120deg, rgba(0, 119, 255, 0.1882352941) 34%, rgba(0, 119, 255, 0) 68%);
   border: none;
   min-height: 394px;
+  border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
   section#difference .row-cards .card {
@@ -469,6 +458,11 @@ body {
 
 h2 {
   font-size: 42px;
+}
+
+button,
+.btn {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
