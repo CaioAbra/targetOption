@@ -217,6 +217,12 @@ section#hero-section {
     margin-left: 2rem;
   }
 }
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  section#hero-section {
+    background-size: 55rem;
+    background-position-y: 32%;
+  }
+}
 section#hero-section .container {
   padding-top: 4rem;
 }
