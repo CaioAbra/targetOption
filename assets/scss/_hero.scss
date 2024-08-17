@@ -1,7 +1,7 @@
 section#hero-section {
     min-height: 100vh;
-    // background: url("../../src/img/bg_hero_webp_4x.webp");
-    background: url("../../src/img/bg-hero.png");
+    background: url("./../../src/img/bg_hero_webp_4x.webp");
+    // background: url("../../src/img/bg-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -26,6 +26,12 @@ section#hero-section {
     @media screen and (min-width:501px) and (max-width:768px) {
         background-size: 55rem;
         background-position-y: 32%;
+    }
+
+    @media screen and (min-width:1366px) {
+        // background: url("./../../src/img/preenchimento_generativo_2_2.webp");
+        min-height: 1011px;
+        background-size: cover;
     }
 
     .container {

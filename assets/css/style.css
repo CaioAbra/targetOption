@@ -196,7 +196,7 @@ header#header nav.navbar.active {
 }
 section#hero-section {
   min-height: 100vh;
-  background: url("../../src/img/bg-hero.png");
+  background: url("./../../src/img/bg_hero_webp_4x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -221,6 +221,12 @@ section#hero-section {
   section#hero-section {
     background-size: 55rem;
     background-position-y: 32%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  section#hero-section {
+    min-height: 1011px;
+    background-size: cover;
   }
 }
 section#hero-section .container {
