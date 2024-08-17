@@ -214,7 +214,9 @@ section#hero-section {
   section#hero-section a.btn.hero {
     padding: 17px 40px !important;
     margin-top: 56vh !important;
-    margin-left: 2rem;
+  }
+  section#hero-section .row-btn {
+    text-align: center;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 768px) {

@@ -19,7 +19,11 @@ section#hero-section {
         a.btn.hero {
             padding: 17px 40px !important;
             margin-top: 56vh !important;
-            margin-left: 2rem;
+            // margin-left: 2rem;
+        }
+
+        .row-btn {
+            text-align: center;
         }
     }
 
@@ -38,9 +42,6 @@ section#hero-section {
         padding-top: 4rem;
     }
 
-    .row {
-        // width: 100%;
-    }
 
     h2 {
         font-family: Good Timing;
