@@ -292,16 +292,23 @@ section#difference .row-cards {
   padding-bottom: 64px;
 }
 section#difference .row-cards .card {
-  padding: 28px 10px;
   background: linear-gradient(120deg, rgba(0, 119, 255, 0.1882352941) 34%, rgba(0, 119, 255, 0) 68%);
   border: none;
-  min-height: 394px;
+  max-height: 394px;
   border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  section#difference .row-cards .card {
+    height: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   section#difference .row-cards .card {
     margin-top: 1rem;
   }
+}
+section#difference .row-cards .card .card-body {
+  padding: 72px 30px !important;
 }
 section#difference .row-cards .card .card-body h5 {
   font-size: 34px;
@@ -320,6 +327,7 @@ section#difference .row-cards .card .card-body div.card-text li {
   position: relative;
   padding-left: 25px;
   color: #C1C0FA;
+  font-family: DXRigraf-SemiBoldExpanded;
 }
 section#difference .row-cards .card .card-body div.card-text li::before {
   content: "";

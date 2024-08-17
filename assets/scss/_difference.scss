@@ -15,17 +15,25 @@ section#difference {
         padding-bottom: 64px;
 
         .card {
-            padding: 28px 10px;
+            // padding: 28px 10px;
             background: linear-gradient(120deg, #0077ff30 34%, #0077ff00 68%);
             border: none;
-            min-height: 394px;
+            max-height: 394px;
             border-radius: 8px;
+
+            @media screen and (min-width:768px) {
+                height: 100%;
+            }
+
 
             @media screen and (max-width:768px) {
                 margin-top: 1rem;
             }
 
             .card-body {
+
+                padding: 72px 30px !important;
+                // min-height: 397px;
 
                 h5 {
                     font-size: 34px;
@@ -38,7 +46,6 @@ section#difference {
                 p {
                     font-size: .9rem;
                     color: #C1C0FA;
-
                 }
 
                 div.card-text {
@@ -51,6 +58,7 @@ section#difference {
                         position: relative;
                         padding-left: 25px;
                         color: #C1C0FA;
+                        font-family: DXRigraf-SemiBoldExpanded;
 
                         &::before {
                             content: "";
